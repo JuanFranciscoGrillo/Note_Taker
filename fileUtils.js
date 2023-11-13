@@ -1,25 +1,25 @@
-// fileUtils.js
 const fs = require('fs');
 const path = require('path');
 
-const dbPath = path.join(__dirname, '../db/db.json');
+const dbPath = path.join(__dirname, './db/db.json');
 
-const readNotes = () => {
+function readNotes() {
     try {
-        const notes = fs.readFileSync(dbPath, 'utf8');
-        return JSON.parse(notes);
+        const data = fs.readFileSync(dbPath, 'utf8');
+        return JSON.parse(data);
     } catch (err) {
-        console.error('Error reading file:', err);
+        console.error('Error reading notes:', err);
         return [];
     }
-};
+}
 
-const writeNotes = (notes) => {
+function writeNotes(notes) {
     try {
-        fs.writeFileSync(dbPath, JSON.stringify(notes, null, 4));
+        const data = JSON.stringify(notes, null, 4);
+        fs.writeFileSync(dbPath, data);
     } catch (err) {
-        console.error('Error writing file:', err);
+        console.error('Error writing notes:', err);
     }
-};
+}
 
 module.exports = { readNotes, writeNotes };
