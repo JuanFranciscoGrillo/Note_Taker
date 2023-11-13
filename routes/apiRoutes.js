@@ -17,4 +17,12 @@ router.post('/api/notes', (req, res) => {
     res.json(newNote);
 });
 
+router.delete('/api/notes/:id', (req, res) => {
+    const noteId = req.params.id;
+    let notes = readNotes();
+    notes = notes.filter(note => note.id !== noteId);
+    writeNotes(notes);
+    res.json({ message: 'Note deleted successfully' });
+});
+
 module.exports = router;

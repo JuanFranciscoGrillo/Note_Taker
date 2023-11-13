@@ -1,4 +1,3 @@
-// server.js or app.js
 const express = require('express');
 const htmlRoutes = require('./routes/htmlRoutes');
 const apiRoutes = require('./routes/apiRoutes');
