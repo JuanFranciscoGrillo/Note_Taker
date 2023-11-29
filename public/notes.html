@@ -1,58 +1,88 @@
+<!-- This is an HTML document -->
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <!-- Set the character encoding to UTF-8 -->
     <meta charset="UTF-8" />
+    <!-- Set the viewport to control the layout on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the compatibility mode for Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Set the title of the page -->
     <title>Note Taker</title>
+    <!-- Include the Bootstrap CSS library -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Include the Font Awesome CSS library -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
+    <!-- Include the custom CSS file -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
 
   <body>
+    <!-- Create a navigation bar -->
     <nav class="navbar bg-info">
+      <!-- Add a link to the homepage with the text "Note Taker" -->
       <a class="navbar-brand text-light p-3" href="/">Note Taker </a>
+      <!-- Create a container for the buttons -->
       <div class="icons">
+        <!-- Create a button to save the note -->
         <button type="button" class="btn btn-outline-light btn-sm save-note">
+          <!-- Add a save icon -->
           <span class="fas fa-save"></span>
+          <!-- Add the text "Save Note" -->
           <span>Save Note</span>
         </button>
+        <!-- Create a button to create a new note -->
         <button type="button" class="btn btn-outline-light btn-sm new-note">
+          <!-- Add an edit icon -->
           <span class="fas fa-edit"></span>
+          <!-- Add the text "New Note" -->
           <span>New Note</span>
         </button>
+        <!-- Create a button to clear the form -->
         <button type="button" class="btn btn-sm btn-outline-danger clear-btn">
+          <!-- Add a times icon -->
           <span class="fas fa-times"></span>
+          <!-- Add the text "Clear Form" -->
           <span>Clear Form</span>
         </button>
       </div>
     </nav>
+    <!-- Create a container for the content -->
     <div class="container-fluid">
+      <!-- Create a row to divide the content into two columns -->
       <div class="row">
+        <!-- Create a column for the list of notes -->
         <div class="col-4 list-container" id="list-container">
+          <!-- Create a card to hold the list -->
           <div class="card">
+            <!-- Create an unordered list for the notes -->
             <ul class="list-group" id="list-group"></ul>
           </div>
         </div>
+        <!-- Create a column for the note form -->
         <div class="col-8">
+          <!-- Create a form for the note -->
           <form class="note-form">
+            <!-- Create an input field for the note title -->
             <input
             class="note-title"
             placeholder="Note Title"
             maxlength="28"
             type="text"
             />
+            <!-- Create a textarea for the note text -->
             <textarea class="note-textarea" placeholder="Note Text"></textarea>
             </form>
         </div>
       </div>
     </div>
+    <!-- Include the JavaScript file -->
     <script src="/assets/js/index.js"></script>
   </body>
 </html>

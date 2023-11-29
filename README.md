@@ -21,7 +21,7 @@ Note Taker is an application designed for writing and saving notes efficiently. 
 
 ## Installation
 
-1. Click on GitHub repository link: [Note Taker Repository](https://github.com/JuanFranciscoGrillo/note-taker)
+1. Click on GitHub repository link: [Note Taker Repository](https://github.com/JuanFranciscoGrillo/Note-Taker)
 
 2. Navigate to the project's root directory.
 3. Run `npm install` to install the necessary dependencies.
