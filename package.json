@@ -4,7 +4,9 @@
   "description": "Repository contains Module 11 Challenge",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +15,11 @@
     "mysql": "^2.18.1",
     "uuid": "^9.0.1"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0"
+  }
 }

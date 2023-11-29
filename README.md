@@ -12,6 +12,7 @@ Note Taker is an application designed for writing and saving notes efficiently. 
 - JavaScript
 
 ## Table of Contents
+
 - Installation
 - Usage
 - License
@@ -46,8 +47,6 @@ Contributions are welcome! To contribute to this project, please follow these st
 
 ## Tests
 
-
-
 ## Questions
 
 If you have any questions or need further assistance, feel free to reach out:
@@ -56,4 +55,3 @@ GitHub Profile: [JuanFranciscoGrillo](https://github.com/JuanFranciscoGrillo)
 Email: jfrgm1986@gmail.com
 
 ## Demo
-

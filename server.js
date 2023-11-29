@@ -11,6 +11,7 @@ const apiRoutes = require('./routes/apiRoutes');
 const app = express();
 
 // Set the port number to either the environment variable PORT or 3000
+// eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3000;
 
 // Parse JSON data in the request body
@@ -30,5 +31,5 @@ app.use('/', apiRoutes);
 
 // Start the server and listen on the specified port
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+  console.log(`Server is listening on port ${PORT}`);
 });
